@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+#root {
+  display: grid;
+  grid-template-areas: "head head head"
+                       "pic main main";
+                      
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10vh 90vh;
+  margin: 0;
+  max-height: 100vh;
+    }   
+
+/* Main sections */
+#root > * {
+  border: 1px solid black;
+}
+
+ h1 {
+  padding-bottom: 12px;
+  padding-left: 120px;
+  margin: 0;
+  font-size: 45pt;
+  font-family: Arial;
+}
+
+h4 {
+  padding-left: 120px;
+  margin: 0;
+  font-size: 20pt;
+  font-family: Arial;
+ 
+}
+
+h3 {
+  padding-bottom: 60px;
+  padding-left: 120px;
+  margin: 0;
+  font-size: 20pt;
+  font-family: Arial;
+}
+
+hr {
+  width: 100%;
+  border-top: black 8px solid;
+  margin: 0;
+
+}
+
+ 
+
+.top-name {
+  font-size: 15pt;
+  font-weight: bold;
+  margin: 0;
+  justify-content: center;
+}
+
+#root > section {
+  grid-area: main;
+  
+  display: flex;
+  
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.photo {
+  background-color: black;
+}

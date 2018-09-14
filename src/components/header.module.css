@@ -1,0 +1,14 @@
+header {
+  
+  align-items: flex-end;
+  grid-area: head;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}  
+
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+
